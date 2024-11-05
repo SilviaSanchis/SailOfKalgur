@@ -27,4 +27,12 @@ class player(models.Model):
 	silver = fields.Float(default = 1000)
 	coal = fields.Float(default = 1000)
 	boat = fields.Int(default = 1)
-	workers = fields.Int(default = 1)
+	worker = fields.Int(default = 1)
+	
+class worker(model.Model):
+	_name = 'sail_of_kalgur.worker'
+	_description = 'Trabajdor de la mina'
+	
+	name = fields.Char()
+	
+	gold = fields.Float()
